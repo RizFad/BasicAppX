@@ -79,16 +79,26 @@ public class ViewTest {
     }
 
     public String getAccessName(int access) {
+<<<<<<< HEAD
         if (access== Modifier.PUBLIC) {
             return "Public";
         } else if (access== Modifier.PRIVATE) {
+=======
+        if (access==Modifier.PUBLIC) {
+            return "Public";
+        } else if (access==Modifier.PRIVATE) {
+>>>>>>> cd3735a (B1-BasicAppX)
             return "Private";
         } else {
             return "Protected";
         }
     }
 
+<<<<<<< HEAD
     public void testField(Object obj, String fieldName, int access, Class<?> type, boolean isNull) {
+=======
+    public void testField(Object obj,String fieldName, int access, Class<?> type, boolean isNull) {
+>>>>>>> cd3735a (B1-BasicAppX)
         Class<?> activityClass = obj.getClass();
         Field f;
         try {
@@ -106,7 +116,11 @@ public class ViewTest {
         }
     }
 
+<<<<<<< HEAD
     public void testMethod(Object obj, String methodName, int access, Class[] params, Class<?> returnType) {
+=======
+    public void testMethod(Object obj,String methodName, int access, Class[] params, Class<?> returnType) {
+>>>>>>> cd3735a (B1-BasicAppX)
         Class<?> activityClass = obj.getClass();
         Method m;
         try {
@@ -134,7 +148,11 @@ public class ViewTest {
         return res;
     }
 
+<<<<<<< HEAD
     public Object getField(Object obj, String fieldName) {
+=======
+    public Object getField(Object obj,String fieldName) {
+>>>>>>> cd3735a (B1-BasicAppX)
         Class<?> activityClass = obj.getClass();
         Field f;
         try {

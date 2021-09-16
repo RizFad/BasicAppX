@@ -1,5 +1,6 @@
 package org.aplas.basicappx;
 
+<<<<<<< HEAD
 import android.content.res.ColorStateList;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -9,6 +10,13 @@ import android.graphics.drawable.RippleDrawable;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.Button;
+=======
+import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.GradientDrawable;
+import android.view.View;
+import android.widget.Adapter;
+>>>>>>> cd3735a (B1-BasicAppX)
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -17,7 +25,10 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import java.lang.reflect.Field;
+=======
+>>>>>>> cd3735a (B1-BasicAppX)
 import java.util.List;
 
 public class ElementTest extends ViewTest {
@@ -92,6 +103,7 @@ public class ElementTest extends ViewTest {
         testItem(expected,component.getPaddingLeft(),msg,1);
         testItem(expected,component.getPaddingRight(),msg,1);
     }
+<<<<<<< HEAD
 
 //    WIP !
     public void testBgColor(int expected) {
@@ -104,6 +116,11 @@ public class ElementTest extends ViewTest {
             buttonColor =getButtonBgColor((Button)component);
             testItem(expected,buttonColor,msg,1);
         }
+=======
+    public void testBgColor(int expected) {
+        String msg = msgHeader + "Element Background color is not suitable\n";
+        testItem(expected,((ColorDrawable) component.getBackground()).getColor(),msg,1);
+>>>>>>> cd3735a (B1-BasicAppX)
     }
 
     public void testBgGradientColor(int[] expected) {
@@ -203,6 +220,7 @@ public class ElementTest extends ViewTest {
         testItem(listToString(expected),res,msg,1);
     }
 
+<<<<<<< HEAD
     public int getButtonBgColor(Button button){
         int buttonColor = 0;
 
@@ -228,6 +246,8 @@ public class ElementTest extends ViewTest {
         return buttonColor;
     }
 
+=======
+>>>>>>> cd3735a (B1-BasicAppX)
     public void testSpinnerContent(String[] expected) {
         /*
         String msg = msgHeader + "Element spinner content is not suitable\n";
@@ -257,7 +277,11 @@ public class ElementTest extends ViewTest {
 
     public void testSelected(boolean expected) {
         String msg = msgHeader + "Element checked/selected value is not suitable\n";
+<<<<<<< HEAD
         if (component.getClass().equals(com.google.android.material.checkbox.MaterialCheckBox.class)) {
+=======
+        if (component.getClass().equals(androidx.appcompat.widget.AppCompatCheckBox.class)) {
+>>>>>>> cd3735a (B1-BasicAppX)
             testItem(expected,((CheckBox)component).isChecked(),msg,1);
         } else {
             testItem(expected,((RadioButton)component).isChecked(),msg,1);
